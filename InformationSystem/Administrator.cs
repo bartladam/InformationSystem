@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
-    internal class Administrator
+    internal class Administrator:Teacher
     {
+        public Administrator(string name, string surname, Titles title) : base(name, surname, title)
+        {
+            
+        }
     }
 }

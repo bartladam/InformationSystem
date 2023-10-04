@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
-    internal class Teacher
+    internal class Teacher:Student
     {
+        public Teacher(string name, string surname, Titles title): base (name, surname, title)
+        {
+            
+        }
+        public  void ControlSystem()
+        {
+            
+        }
     }
 }

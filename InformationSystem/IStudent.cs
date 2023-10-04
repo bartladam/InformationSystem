@@ -8,5 +8,9 @@ namespace InformationSystem
 {
     internal interface IStudent
     {
+        string name { get; }
+        string surname { get; }
+        void ControlSystem();
+
     }
 }
