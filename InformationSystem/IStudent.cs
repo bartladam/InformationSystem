@@ -12,7 +12,7 @@ namespace InformationSystem
         string surname { get; }
         string username { get; }
         string password { get; }
-        void ControlSystem(System system);
+
 
     }
 }

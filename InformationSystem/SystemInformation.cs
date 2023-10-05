@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
-    internal class System
+    internal class SystemInformation
     {
         public List<Student> students { get; private set; }
         public List<Teacher> teachers { get; private set; }
         private Administrator admin { get; init; }
         private Login login { get; init; }
-        public System(Administrator admin, Login login)
+        public SystemInformation(Administrator admin, Login login)
         {
             students = new List<Student>();
             teachers = new List<Teacher>();
@@ -35,9 +35,18 @@ namespace InformationSystem
                 {
                     case "1":
                         if (student.schedule is null)
-                            student.AddSchedule(NewSchedule());
+                        {
+                            student.AddSchedule(new Schedule());
+                            Console.WriteLine(student.schedule);
+                        }
                         else
                             Console.WriteLine(student.schedule);
+                        break;
+                    case "2":
+                        Console.WriteLine(student.grades);
+                        break;
+                    case "3":
+                        Console.WriteLine(student.homework);
                         break;
                 }
             }
@@ -57,6 +66,14 @@ namespace InformationSystem
         private Schedule NewSchedule()
         {
             return new Schedule();
+        }
+        public void AddStudent(string name, string surname, Student.Titles titles, string username, string password)
+        {
+            students.Add(new Student(name, surname, titles, username, password));
+        }
+        public void AddTeacher(string name, string surname, Student.Titles titles, string username, string password)
+        {
+            teachers.Add(new Teacher(name, surname, titles, username, password));
         }
     }
 }

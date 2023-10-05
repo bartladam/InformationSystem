@@ -8,7 +8,7 @@ namespace InformationSystem
 {
     internal class Administrator:Teacher
     {
-        public Administrator(string name, string surname, Titles title) : base(name, surname, title)
+        public Administrator(string name, string surname, Titles title, string username, string password) : base(name, surname, title, username, password)
         {
             
         }

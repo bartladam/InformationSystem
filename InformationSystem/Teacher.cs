@@ -8,13 +8,10 @@ namespace InformationSystem
 {
     internal class Teacher:Student
     {
-        public Teacher(string name, string surname, Titles title): base (name, surname, title)
+        public Teacher(string name, string surname, Titles title, string username, string password): base (name, surname, title, username, password)
         {
             
         }
-        public  void ControlSystem()
-        {
-            
-        }
+
     }
 }

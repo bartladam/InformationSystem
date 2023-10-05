@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection.PortableExecutable;
 using System.Text;
@@ -16,6 +17,8 @@ namespace InformationSystem
         public string username { get; private set; }
         public string password { get; private set; }
         public Schedule schedule { get; private set; }
+        public Homework homework { get; private set; }
+        public SchoolGrades grades { get; private set; }
 
         public Student(string name, string surname, Titles title, string username, string password)
         {
@@ -24,10 +27,20 @@ namespace InformationSystem
             this.title = title;
             this.username = username;
             this.password = password;
+            this.homework = new Homework();
+            this.grades = new SchoolGrades();
         }
         public void AddSchedule(Schedule schedule)
         {
             this.schedule = schedule;
+        }
+        public void AddHomework(string newHomework)
+        {
+            this.homework.homeworks.Add(newHomework);
+        }
+        public void AddGrade(string grade)
+        {
+            this.grades.grades.Add(grade);
         }
     }
 }

@@ -1,0 +1,15 @@
+D:\Visual Studio Projects\InformationSystem\InformationSystem\bin\Debug\net7.0\InformationSystem.exe
+D:\Visual Studio Projects\InformationSystem\InformationSystem\bin\Debug\net7.0\InformationSystem.deps.json
+D:\Visual Studio Projects\InformationSystem\InformationSystem\bin\Debug\net7.0\InformationSystem.runtimeconfig.json
+D:\Visual Studio Projects\InformationSystem\InformationSystem\bin\Debug\net7.0\InformationSystem.dll
+D:\Visual Studio Projects\InformationSystem\InformationSystem\bin\Debug\net7.0\InformationSystem.pdb
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.AssemblyInfo.cs
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.dll
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\refint\InformationSystem.dll
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.pdb
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\InformationSystem.genruntimeconfig.cache
+D:\Visual Studio Projects\InformationSystem\InformationSystem\obj\Debug\net7.0\ref\InformationSystem.dll
