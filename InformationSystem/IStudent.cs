@@ -10,7 +10,9 @@ namespace InformationSystem
     {
         string name { get; }
         string surname { get; }
-        void ControlSystem();
+        string username { get; }
+        string password { get; }
+        void ControlSystem(System system);
 
     }
 }

@@ -21,14 +21,25 @@ namespace InformationSystem
         }
         public void LoginIntoSystem(string username, string password)
         {
+            string choice;
             object signIn = login.LoginIntoSystem(username, password, students, teachers);
             if(signIn is Student)
             {
+                Student student = (Student)signIn;
                 Console.WriteLine(@"You can choose between:
 1 - Schedule 
 2 - School grades
 3 - Homework");
-            manipulationSystem();
+                choice = Console.ReadLine();
+                switch(choice)
+                {
+                    case "1":
+                        if (student.schedule is null)
+                            student.AddSchedule(NewSchedule());
+                        else
+                            Console.WriteLine(student.schedule);
+                        break;
+                }
             }
             if(signIn is Teacher)
             {
@@ -36,11 +47,16 @@ namespace InformationSystem
 1 - Schedule 
 2 - Students school grades
 3 - new homework");
+                choice = Console.ReadLine();
+                switch (choice)
+                {
+
+                }
             }
         }
-        private void manipulationSystem()
+        private Schedule NewSchedule()
         {
-
+            return new Schedule();
         }
     }
 }
