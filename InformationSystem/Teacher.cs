@@ -12,9 +12,6 @@ namespace InformationSystem
         {
             
         }
-        public  void ControlSystem()
-        {
-            
-        }
+
     }
 }
