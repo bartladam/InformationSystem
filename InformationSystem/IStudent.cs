@@ -12,7 +12,12 @@ namespace InformationSystem
         string surname { get; }
         string username { get; }
         string password { get; }
-
+        Schedule schedule { get; }
+        Homework homework { get; }
+        SchoolGrades grades { get; }
+        void AddSchedule(Schedule schedule);
+        void AddHomework(string newHomework);
+        void AddGrade(string grade);
 
     }
 }

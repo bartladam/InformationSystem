@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
+    /// <summary>
+    /// New homework for students
+    /// </summary>
     internal class Homework
     {
+        /// <summary>
+        /// Each students own list of his homeworks to do
+        /// </summary>
         public List<string> homeworks { get; set; }
         public Homework()
         {
@@ -16,9 +22,9 @@ namespace InformationSystem
         public override string ToString()
         {
             string allHomeworks = "";
-            foreach (string homework in homeworks)
+            for (int i = 0; i < homeworks.Count; i++)
             {
-                allHomeworks += homework + "\n";
+                allHomeworks += string.Format("{0}) {1}\n", i + 1, homeworks[i]);
             }
             return allHomeworks;
         }

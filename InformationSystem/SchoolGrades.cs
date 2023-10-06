@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
+    /// <summary>
+    /// New grades from test or homework for student
+    /// </summary>
     internal class SchoolGrades
     {
+        /// <summary>
+        /// Each student has own list of grades from different subjects
+        /// </summary>
         public List<string> grades { get; set; }
         public SchoolGrades()
         {

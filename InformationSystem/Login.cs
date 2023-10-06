@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace InformationSystem
 {
+    /// <summary>
+    /// Before connect to system, student or teacher have to login
+    /// </summary>
     internal class Login
     {
-        public object LoginIntoSystem(string username, string password, List<Student>? students, List<Teacher>? teachers)
+        /// <summary>
+        /// Before to connect with information system, student or teacher have to login to system
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <param name="students"></param>
+        /// <param name="teachers"></param>
+        /// <returns></returns>
+        public object LoginIntoSystem(string username, string password, List<IStudent>? students, List<Teacher>? teachers)
         {
             foreach (Student student in students)
             {
