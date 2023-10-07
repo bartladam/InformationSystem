@@ -12,3 +12,7 @@ USED SKILLS
 9) Random
 10) Explicit conversions
 11) Switch
+
+NOTE:
+------------
+Programmed in .NET 7.0
